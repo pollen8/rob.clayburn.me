@@ -1,0 +1,16 @@
+{
+  "name": "clayburn.me",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob Clayburn",
+  "license": "GPL",
+  "devDependencies": {
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "time-grunt": "^1.0.0"
+  }
+}

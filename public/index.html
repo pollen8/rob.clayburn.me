@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rob Clayburn - freelance developer</title>
+
+    <!-- Bootstrap -->
+    <link href="css/template.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/menu.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-app="myApp">
+  
+    <div class="container">
+    
+	    <div class="jumbotron">
+	    	<div class="row">
+	    		<div class="col-xs-3">
+	    			<img src="images/rob.jpg" alt="Rob Clayburn" class="img-circle" />
+	    		</div>
+	    		<div class="col-xs-9">
+	    		<h1>&gt; git pull Rob Clayburn</h1>
+			<p class="primary">
+			
+			I'm a freelance full-stack web developer, currently dwelling in La Rochelle France, <br />making the complex simple and the unatainable accessible</p>
+			<!--  who loves creating left field boundary pushing projects. -->
+	    		</div>
+	    	</div>
+	    	
+	    	<ul class="nav nav-pills">
+				<li ng-class="{active: $state.includes('projects')}" ><a ui-sref="projects.fabrik">Projects</a></li>
+				<li ng-class="{active: $state.includes('contact')}" ><a ui-sref="contact">Contact</a></li>
+			</ul>
+		</div>
+	
+		
+
+		<div ui-view></div>
+		<footer></footer>
+	</div>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.4.0/holder.min.js"></script>
+  </body>
+</html>
