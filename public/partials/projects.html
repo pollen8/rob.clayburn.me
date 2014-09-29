@@ -1,62 +1,20 @@
-	<div class="row">
-		<div class="col-xs-9 projects">
-			<div ui-view class="project animation"></div>
-		</div>
-		
-		<div class="col-xs-3">
-			<div class="grid" ng-controller="menuCtrl">
-				<div class="row text-center">
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.fabrik" ui-sref-active="open">
-							<img src="images/thumbs/fabrik-logo.png" width="40px" height="40px" class="img-circle" alt="Fabrik" class="img-rounded" />
-						</a>
-					</div>
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.podion"  ui-sref-active="open">
-							<img src="images/podion.png" width="40px" height="40px" class="img-circle" alt="Podion" class="img-rounded" />
-						</a>
-					</div>
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.msge"  ui-sref-active="open">
-							<img src="images/thumbs/msge.png" width="40px" height="40px" class="img-circle" alt="Msge" class="img-rounded" />
-						</a>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.tweeture" ui-sref-active="open">
-							<img src="images/thumbs/tweeture.jpg" width="40px" height="40px" class="img-circle" alt="Tweeture" class="img-rounded" />
-						</a>
-					</div>
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.jed" ui-sref-active="open">
-							<img src="images/thumbs/jed.png" width="40px" height="40px" class="img-circle" alt="JED" class="img-rounded" />
-						</a>
-					</div>
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.asylum" ui-sref-active="open">
-							<img src="images/28hourslater.png" width="40px" height="40px" class="img-circle" alt="Asylum" class="img-rounded" />
-						</a>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.liaisun" ui-sref-active="open">
-							<img src="images/thumbs/liaisun.png" width="40px" height="40px" class="img-circle" alt="liaisun" class="img-rounded" />
-						</a>
-					</div>
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.jekyll" ui-sref-active="open">
-							<img src="images/thumbs/Jekyll_and_HydeS_Shot.jpg" width="40px" height="40px" class="img-circle" alt="Jekyll" class="img-rounded" />
-						</a>
-					</div>
-					<div class="col-xs-4">
-						<a ng-mouseenter="enter($event)" ui-sref="projects.bourjois-belle" ui-sref-active="open">
-							<img src="images/thumbs/belle.jpg" width="40px" height="40px" class="img-circle" alt=Bourjouis Belle" class="img-rounded" />
-						</a>
-					</div>
-				</div>
-			</div>		
-		</div>
+<div class="row" role="navigation" aria-labelledby="Projects">
+	<div ng-controller="dropMenuCtrl" class="col-xs-12 visible-sm visible-xs">
+		<select class=" pull-right" ng-model="item" ng-change="update(item)" ng-options="item as item.title for item in projects" >
+		</select>
 	</div>
-	
+	<div class="col-md-9 col-sm-12 projects">
+		<div ui-view class="project animation"></div>
+	</div>
+	<div class="col-xs-3 hidden-sm hidden-xs">
+		<div class="grid" ng-controller="menuCtrl">
+			<div class="row text-center">
+				<div class="col-sm-4" ng-repeat="project in projects">
+					<a ng-mouseenter="enter($event)" ui-sref="projects.{{project.view}}" ui-sref-active="open">
+						<img src="images/thumbs/{{project.thumb}}" width="40px" height="40px" class="img-circle" alt="{{project.title}}" class="img-rounded" />
+					</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
