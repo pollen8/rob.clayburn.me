@@ -25,7 +25,7 @@ var appStates = [
 ]; 
 
 
-var myApp = angular.module('myApp', ['ui.router', 'ngAnimate', 'angulartics', 'angulartics.google.analytics', 'HashBangURLs']);
+var myApp = angular.module('myApp', ['ui.router', 'ui.bootstrap', 'ngAnimate', 'angulartics', 'angulartics.google.analytics', 'HashBangURLs']);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 	 $urlRouterProvider.otherwise('/projects/fabrik');
@@ -47,7 +47,6 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 			      url: appState.url,
 			      templateUrl: 'partials/' + appState.template,
 			      controller: function ($scope) {
-			    	  console.log('ready!');
 			    	  $scope.status = 'ready';
 			      }
 			    })
@@ -116,3 +115,4 @@ myApp.controller('contactCtrl', ['$scope', '$http', function ($scope, $http) {
 		};
 	}
 ]);
+

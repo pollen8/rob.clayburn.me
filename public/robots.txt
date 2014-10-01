@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /bower_components/
+Disallow: /vendor/
+Disallow: /partials/

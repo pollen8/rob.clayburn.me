@@ -1,4 +1,5 @@
 <div class="row" role="navigation" aria-labelledby="Projects">
+	
 	<div ng-controller="dropMenuCtrl" class="col-xs-12 visible-sm visible-xs">
 		<select class=" pull-right" ng-model="item" ng-change="update(item)" ng-options="item as item.title for item in projects" >
 		</select>
@@ -6,11 +7,12 @@
 	<div class="col-md-9 col-sm-12 projects">
 		<div ui-view class="project animation"></div>
 	</div>
-	<div class="col-xs-3 hidden-sm hidden-xs">
+	<div class="col-xs-3 hidden-sm hidden-xs project-nav">
+		<h3>Select a project...</h3>
 		<div class="grid" ng-controller="menuCtrl">
 			<div class="row text-center">
 				<div class="col-sm-4" ng-repeat="project in projects">
-					<a ng-mouseenter="enter($event)" ui-sref="projects.{{project.view}}" ui-sref-active="open">
+					<a ng-mouseenter="enter($event)" ui-sref="projects.{{project.view}}" ui-sref-active="open" tooltip="{{project.title}}">
 						<img src="images/thumbs/{{project.thumb}}" width="40px" height="40px" class="img-circle" alt="{{project.title}}" class="img-rounded" />
 					</a>
 				</div>

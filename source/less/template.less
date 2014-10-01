@@ -1,0 +1,108 @@
+@import "bootstrap/bootstrap.less";
+@import "elements.less";
+@import "structure.less";
+
+body {
+	background-color: #fff;
+	/* font-family: 'Pontano Sans', sans-serif; */
+	font-size: 2em;
+	background-color: @colour1;
+}
+
+.container {
+	background-color: #fff;
+}
+
+h1, h2, h3, h4 {
+	color: @colour3;
+}
+
+h2 {
+	font-size: 2.5em;
+	color: @colour5;
+}
+
+h3 {
+	font-size: 2em;
+	color: @colour4;
+	margin: 40px 0;
+}
+
+
+.container .jumbotron {
+	.border-radius(0, 6px, 6px, 0);
+}
+
+.jumbotron {
+	background-color: @colour3-light;
+	border: 2px solid @colour3-light;
+	border-top: 0px;
+	
+	h1 {
+		color: @colour1;
+	}
+	
+	.nav>li>a {
+		color: @colour5-dark;
+	}
+	
+	.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+		background-color: #fff;
+		color: @colour5-dark;
+		border: 2px solid @colour3-light;
+		border-bottom: 0;
+		.border-radius(3px, 3px, 0, 0 );
+	}
+	
+	.nav>li>a:hover, .nav>li>a:focus {
+		background-color: @colour3-light;
+		color: @colour5-dark;
+	}
+}
+
+.grid {
+
+	a {
+		
+		img {
+			border: 3px solid transparent;
+		}
+	}
+	
+	a.open img {
+		border: 3px solid @colour5;
+	}
+}
+
+
+.badge-lang {
+	background-color: @colour1;
+}
+
+.badge-maps {
+	background-color: @colour2;
+	color: @colour5-dark;
+}
+
+.badge-api {
+	background-color: @colour3;
+	color: @colour5-dark;
+}
+
+.badge-html {
+	background-color: @colour4;
+}
+
+.badge-build {
+	background-color:@colour5-dark;
+}
+
+.badge-db {
+	background-color: @colour4-dark;
+}
+
+.badge-css {
+	background-color: @colour5;
+}
+
+@import "colours.less";
