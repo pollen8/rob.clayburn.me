@@ -1,0 +1,243 @@
+@font-face {
+  font-family: Digital-7;
+  src: url(../../public/fonts/Digital-7/Digital-7.woff) format('woff'),
+  url(../../public/fonts/Digital-7/Digital-7.eot) format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../../public/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('../../public/fonts/Satoshi-Bold.woff') format('woff'),
+       url('../../public/fonts/Satoshi-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../../public/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../../public/fonts/Satoshi-Regular.woff') format('woff'),
+       url('../../public/fonts/Satoshi-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-Regular.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../../public/fonts/Poppins-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Black';
+  src: url('../../public/fonts/Poppins-Black.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+:root {
+  font-family: Satoshi-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-size: 0.85rem;
+  background-color: #141424;
+  background: url('../../images/bg-burn.svg') no-repeat center center fixed;
+  /* background-repeat: none; */
+  /* background-size: 100%; */
+  /* background-size: auto; */
+  font-synthesis: none;
+  /* background-position: 0; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+:root, a {
+  color: hsla(150, 10%, 80%);
+  color: hsla(12, 10%, 67%);
+}
+h1, h2, h3, h4 {
+  font-family: Poppins;
+  margin-bottom: 0;
+  /* color: rgba(255, 255, 255, 0.8); */
+  padding-bottom: 0;
+  color: hsla(200, 20%, 80%);
+  color: hsla(12, 10%, 80%)
+}
+
+h1 {
+  font-family: Poppins-Bold;
+  font-size: 3.5rem;
+  letter-spacing: -3px;
+  font-weight: 800;
+  line-height: 4.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #050108;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.animate-character-blue{
+   
+  background-image: linear-gradient(
+    -225deg,
+    hsla(100, 50%, 50%),
+    hsla(190, 70%, 70%),
+    hsla(190, 50%, 50%),
+    /* hsla(100, 50%, 50%), */
+
+    hsla(50, 80%, 50%)
+
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 150% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* animation: textclip 2s linear infinite; */
+  animation: textclip 1s linear;
+  display: inline-block;
+  padding-right: 3rem;
+      
+}
+
+
+.animate-character{
+   
+  background-image: linear-gradient(
+    -225deg,
+    /* hsla(0, 50%, 50%),
+    hsla(90, 50%, 50%),
+    #ff1361 67%,
+    hsla(0, 50%, 50%),
+
+    #fff800 100% */
+    hsla(50, 80%, 50%),
+    hsla(100, 50%, 50%),
+    hsla(190, 50%, 50%),
+    hsla(190, 70%, 70%),
+    hsla(100, 50%, 50%)
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* animation: textclip 2s linear infinite; */
+  animation: textclip 2s linear;
+  display: inline-block;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: -200% center;
+  }
+}
+
+strong {
+  font-family: Satoshi-Bold;
+}
+
+main {
+  margin-bottom: 4rem;
+}
+
+.bird1 {
+  animation: fadein 0.8s forwards;
+  animation-delay: 0.6s;
+  height: 100px;
+  opacity: 0;
+  width: 100px;
+}
+
+.bird2 {
+  animation: fadein 1s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+  /* clip-path: circle(0%); */
+  height: 200px;
+  width: 200px;
+}
+
+.bird3 {
+  animation: fadein 0.7s forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+
+  /* clip-path: circle(0%); */
+  height: 200px;
+  width: 200px;
+}
+
+@keyframes fadein { 
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes circle {
+  0% { clip-path: circle(0%); }
+  50% { clip-path: circle(60%); }
+  100% { clip-path: circle(100%); }
+}
