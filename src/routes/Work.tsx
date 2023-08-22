@@ -42,7 +42,7 @@ source charting library.</li>
 <li>Designed front end architecture (TypeScript React & Redux).</li>
 <li>Created Node.js/Express user management & authentication
 services.</li>
-<li>Conceived and implemented our React design system.</li>
+<li>Conceived and implemented our React design system managed within Storybook.</li>
 </ul>
 </Details>
 <div>

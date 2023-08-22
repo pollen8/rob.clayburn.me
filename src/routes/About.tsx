@@ -1,7 +1,7 @@
 export const About = () => {
   return (
   <>
-  <h1 className="animate-character-blue">/ about</h1>
+  <h1 className="animate-character-blue">/about</h1>
    <p style={{marginTop: '1rem'}}>
     A full-stack web developer with 20 years of experience dedicated to creating and delivering unique web experiences,
     I love thinking out of the box and delighting my clients.
