@@ -14,13 +14,12 @@ entries,
 }: Props) => {
   const [ref, bounds] = useMeasure({ polyfill: ResizeObserver });
   const [active, setActive] = useState(-1);
-  console.log('active', active);
   return (
     <div ref={ref} style={{width: '100%'}}>
     <svg width={bounds.width} height="300px">
     <defs>
     {
-        entries.map((entry, i) => 
+        entries.map((_entry, i) => 
     <linearGradient id={`Gradient${i}`} key={`gradient-${i}`}  x1="0" x2="0" y1="0" y2="1">
       <stop offset="0%" stopColor={`hsl(${((i + 1) * 20) - 20}, 50%, 50%)`} />
       <stop offset="50%" stopColor={`hsl(0, 10%, 0%)`} />
@@ -30,7 +29,7 @@ entries,
         )}
           <style>
               {
-              entries.map((entry, i) => {
+              entries.map((_entry, i) => {
                 return ` #circle${i} { fill: url(#Gradient${i}); }
                 `
               })

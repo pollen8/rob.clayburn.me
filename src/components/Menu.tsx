@@ -47,7 +47,7 @@ const List = styled.ul`
     color: #fff;
     &:before {
       width: 7rem;
-      border-bottom: 1px solid hsla(50, 80%, 50%);
+      border-bottom: 1px solid hsl(50, 80%, 50%);
     }
   }
 `;

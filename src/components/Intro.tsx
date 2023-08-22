@@ -4,7 +4,6 @@ import {
 } from 'styled-components';
 
 import { Menu } from './Menu';
-import { Shape } from './Shape';
 import { SocialIcons } from './SocialIcons';
 
 const fadeIn = keyframes`
@@ -31,19 +30,13 @@ const Fixed = styled.div`
 
 export const Intro = () => {
   return (
-    <>
-      <Fixed>
-        <div style={{textAlign: 'right'}}>
-    <h1 className="animate-character">Rob Clayburn</h1>
-    <StrapLine>Full stack developer</StrapLine>
-    <SocialIcons />
-    <Menu />
-    {/* <Shape /> */}
-    <div style={{clear: 'both'}}>
-    </div>
-    </div>
-    </Fixed>
-
-</>
+    <Fixed>
+      <div style={{textAlign: 'right'}}>
+        <h1 className="animate-character">Rob Clayburn</h1>
+        <StrapLine>Full stack developer</StrapLine>
+        <SocialIcons />
+        <Menu />
+      </div>
+  </Fixed>
   )
 }
