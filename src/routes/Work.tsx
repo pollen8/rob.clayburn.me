@@ -4,6 +4,9 @@ import { TwoColumnContent } from '../components/TwoColumnContent';
 
 const Details = styled.article`
   margin-bottom: 1rem;
+  strong {
+    color: #fff;
+  }
   ul {
     margin: 0;
     padding: 1rem;
@@ -15,21 +18,21 @@ export const Work = () => {
     <h1 className="animate-character-blue">/work</h1>
     <TwoColumnContent>
       <div>2019 - Present</div>
-      <Details><strong>Lead Front End Software Engineer</strong> InfoSum<br />
+      <Details><strong>Lead Front End Software Engineer</strong> / InfoSum<br />
 <ul>
   <li> Technical lead to a team of 9 other front end developers.</li>
 <li> Liaising with the product and architecture teams to understand
 technical implications and breakdown epics.</li>
 <li> Mentoring team members, helping them meet their career and
 technical goals.</li>
-<li> Leading the drive to implement a micro-front end architecture.</li>
+<li> Leading the drive to implement a micro-front end & GraphQL architecture.</li>
 <li> Developed R&D project to integrate 3rd party apps into our
 platform, authenticated via oAuth.</li>
 </ul>
 </Details>
 <div>2016 - 2019</div>
 <Details>
-<strong>Software Engineer</strong> InfoSum<br />
+<strong>Software Engineer</strong> / InfoSum<br />
 I joined InfoSum as their first front end engineer and have been a core
 part of the development team creating the market leading privacy first
 decentralised platform for connecting and analysing data.
@@ -61,7 +64,7 @@ AngularJS admin application.</li>
 2005 – 2014
 </div>
 <Details>
-<strong>Owner</strong> Pollen 8 Design Ltd<br />
+<strong>Owner</strong> / Pollen 8 Design Ltd<br />
 Lead developer and community manager
 for <a href="https://fabrikar.conm" target="_blank">Fabrik</a>, a low-code solution for building custom applications in Joomla
 <ul>
@@ -89,7 +92,7 @@ In/Location Based Services".</li>
 2007 – 2014
 </div>
 <Details>
-<strong>Chief Technical Officer</strong> Illibirum <br />
+<strong>Chief Technical Officer</strong> / Illibirum <br />
 Providing real-time HTML5
 collaborative video annotation services for the film industry.
 <ul>
@@ -102,7 +105,7 @@ HTML5, webRTC and Angular.js
 1999 – 2005
 </div>
 <Details>
-  <strong>Senior designer / developer</strong> Datasphere Ltd <br />
+  <strong>Senior designer / developer</strong> / Datasphere Ltd <br />
 Design and development of touchscreen kiosk software, web
 applications and websites.
 <ul>
