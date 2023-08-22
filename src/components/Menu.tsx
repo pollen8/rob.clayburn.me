@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
 
+import { mediaQueries } from '../utils/mediaQueries';
+
 const List = styled.ul`
   padding: 0;
   margin: 0;
@@ -50,25 +52,54 @@ const List = styled.ul`
       border-bottom: 1px solid hsl(50, 80%, 50%);
     }
   }
+
+  ${mediaQueries("md")`
+  margin-bottom: 1.5rem;
+  width: 100%;
+    li {
+      display: inline-block;
+      width: 6rem;
+    }
+
+    a {
+      justify-content: start;
+
+      &:before {
+        right: initial;
+        left: 0;
+      }
+    }
+
+    a:hover::before {
+      width: 5rem;
+    }
+
+    a.active {
+      color: #fff;
+      &:before {
+        width: 5rem;
+      }
+    }
+  `};
 `;
 
 export const Menu = () => {
   return (
     <header>
-    <List>
+      <List>
+          <li>
+          <NavLink to="/">about</NavLink>
+        </li>
         <li>
-        <NavLink to="/">about</NavLink>
-      </li>
-      <li>
-        <NavLink to="/projects">projects</NavLink>
-      </li>
-      <li>
-        <NavLink to="/work">work</NavLink>
-      </li>
-      {/* <li>
-        <NavLink to="/blog">Blog</NavLink>
-      </li> */}
-    </List>
+          <NavLink to="/projects">projects</NavLink>
+        </li>
+        <li>
+          <NavLink to="/work">work</NavLink>
+        </li>
+        {/* <li>
+          <NavLink to="/blog">Blog</NavLink>
+        </li> */}
+      </List>
     </header>
   )
 }

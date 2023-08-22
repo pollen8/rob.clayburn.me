@@ -6,18 +6,22 @@ import {
 import { styled } from 'styled-components';
 
 import { Intro } from './components/Intro';
+import { mediaQueries } from './utils/mediaQueries';
 
-/**
- * @todo mobile....
- */
 const Frame = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80rem;
-  row-gap: 10rem;
+  max-width: 80rem;
   grid-column-gap: 5rem;
-  padding-top: 5rem;
   margin: auto;
+  padding: 5rem 1rem 0 1rem;
+
+  ${mediaQueries("md")`
+    grid-template-columns:1fr;
+    row-gap: 0;
+    width: auto;
+    padding: 0.75rem 1.25rem;
+  `};
 `
 const pageVariants = {
   initial: {

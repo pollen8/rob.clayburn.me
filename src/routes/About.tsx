@@ -16,8 +16,9 @@ export const About = () => {
     </p>
     <p>Coaching draws a lot of parallels with agile development in that short cyclical feedback loops produce amazing improvements.
       You need to analyse the situation, figure out the players needs, suggest improvements and observe if your suggestions are working. 
-      If not, change the advice and repeat the process. 
-      What I find fascinating is the different ways each of us learns and I get a real buzz when some new skill clicks with a student.
+      If not, change the advice and repeat the process.</p>
+      <p>
+      I find the different ways each of us learns fascinating and get a real buzz when a new skill clicks with a student.
     </p>
   </>
   );

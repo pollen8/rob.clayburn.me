@@ -11,6 +11,10 @@ const Details = styled.article`
     margin: 0;
     padding: 1rem;
   }
+  p {
+    padding: 1rem 0 0 0;
+    margin: 0;
+  }
 `;
 export const Work = () => {
   return (
@@ -33,9 +37,11 @@ platform, authenticated via oAuth.</li>
 <div>2016 - 2019</div>
 <Details>
 <strong>Software Engineer</strong> / InfoSum<br />
-I joined InfoSum as their first front end engineer and have been a core
+<p>
+  I joined InfoSum as their first front end engineer and have been a core
 part of the development team creating the market leading privacy first
 decentralised platform for connecting and analysing data.
+</p>
 <ul>
   <li>Developed complex visualizations in D3 and published an open
 source charting library.</li>
@@ -65,8 +71,10 @@ AngularJS admin application.</li>
 </div>
 <Details>
 <strong>Owner</strong> / Pollen 8 Design Ltd<br />
-Lead developer and community manager
-for <a href="https://fabrikar.conm" target="_blank">Fabrik</a>, a low-code solution for building custom applications in Joomla
+<p>
+  Lead developer and community manager
+  for <a href="https://fabrikar.conm">Fabrik</a>, a low-code solution for building custom applications in Joomla
+</p>
 <ul>
 <li>Providing project vision and best practices.</li>
 <li>Managing a remote team of contributors.</li>
@@ -93,8 +101,10 @@ In/Location Based Services".</li>
 </div>
 <Details>
 <strong>Chief Technical Officer</strong> / Illibirum <br />
-Providing real-time HTML5
-collaborative video annotation services for the film industry.
+<p>
+  Providing real-time HTML5
+  collaborative video annotation services for the film industry.
+</p>
 <ul>
   <li>R&D in emerging web technologies, such as NodeJS, Socket.io,
 HTML5, webRTC and Angular.js
@@ -106,8 +116,9 @@ HTML5, webRTC and Angular.js
 </div>
 <Details>
   <strong>Senior designer / developer</strong> / Datasphere Ltd <br />
-Design and development of touchscreen kiosk software, web
+<p>Design and development of touchscreen kiosk software, web
 applications and websites.
+</p>
 <ul>
   <li>Managed a team of four developers and provided in-house
 training.

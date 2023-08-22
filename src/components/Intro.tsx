@@ -3,6 +3,7 @@ import {
   styled,
 } from 'styled-components';
 
+import { mediaQueries } from '../utils/mediaQueries';
 import { Menu } from './Menu';
 import { SocialIcons } from './SocialIcons';
 
@@ -21,22 +22,32 @@ const StrapLine = styled.p`
   animation: ${fadeIn} 2s linear forwards;
   animation-delay: 2.2s;
   margin-top: 1rem;
+
+  ${mediaQueries("md")`
+     margin-top: 0;
+     margin-bottom: 1rem;
+  `};
 `;
 
 const Fixed = styled.div`
   position: sticky;
   top: 5rem;
+  text-align: right;
+
+  ${mediaQueries("md")`
+    position: inherit;
+    top: 0;
+    text-align: left;
+  `};
 `;
 
 export const Intro = () => {
   return (
     <Fixed>
-      <div style={{textAlign: 'right'}}>
-        <h1 className="animate-character">Rob Clayburn</h1>
-        <StrapLine>Full stack developer</StrapLine>
-        <SocialIcons />
-        <Menu />
-      </div>
+      <h1 className="animate-character">Rob Clayburn</h1>
+      <StrapLine>Full stack developer</StrapLine>
+      <SocialIcons />
+      <Menu />
   </Fixed>
   )
 }
