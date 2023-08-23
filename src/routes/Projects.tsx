@@ -10,6 +10,7 @@ import {
 
 import { TwoColumnContent } from '../components/TwoColumnContent';
 import { JournalRow } from '../supabase';
+import { mediaQueries } from '../utils/mediaQueries';
 
 const Article = styled.article`
   margin-bottom: 3rem;
@@ -41,7 +42,12 @@ const Grid = styled(TwoColumnContent)`
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 1px 0px hsla(180, 100%, 80%, 0.1) inset;
-
+  ${mediaQueries("md")`
+    grid-template-columns:1fr;
+    row-gap: 0;
+    width: auto;
+    padding: 0.75rem 1.25rem;
+  `};
 `
 
 const Img = styled.img`
@@ -82,7 +88,6 @@ export const Projects = () => {
   return (
     <>
     <h1 className="animate-character-blue">/projects</h1>
-    {/* <TimeLine entries={entries} /> */}
     {entries.map((entry) => <Article key={entry.id}>
       
       <Grid>

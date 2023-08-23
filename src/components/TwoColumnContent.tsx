@@ -5,4 +5,5 @@ export const TwoColumnContent = styled.div`
   grid-template-columns: 8rem 1fr;
   grid-column-gap: 1rem;
   margin-top:1rem;
+
 `;
