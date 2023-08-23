@@ -105,7 +105,6 @@ export const Work = () => {
         date="2007 – 2014"
         title="Chief Technical Officer"
         company="Illibirum">
-        <strong>Chief Technical Officer</strong> / Illibirum <br />
         <p>
           Providing real-time HTML5
           collaborative video annotation services for the film industry.
